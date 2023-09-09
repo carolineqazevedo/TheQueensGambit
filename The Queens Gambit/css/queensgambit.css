@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@300;400;500;600&display=swap");
+
+:root {
+  font-size: 62.5%;
+  --color-bg: #2d231d;
+  --color-white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--color-bg);
+}
+
+.bg-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../assets/BannerGambito.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+
+.title {
+  width: 100%;
+  max-width: 1000px;
+  height: 225px;
+  margin-bottom: 117px;
+}
+
+.swiper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-wrapper {
+  margin-top: 0rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  background-color: var(--color-bg);
+  padding: 0rem 0;
+}
+
+.swiper-slide {
+  width: 100%;
+  max-width: 57.6rem;
+  height: 32.4rem;
+  transition: 200ms ease-in;
+}
+
+.swiper-slide .image {
+  cursor: pointer;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.8); */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: var(--color-white);
+  padding: 2.3rem;
+  border-radius: 50%;
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: "next";
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-family: swiper-icons;
+  font-size: 1.3rem !important;
+  text-transform: none !important;
+  letter-spacing: 0;
+  font-variant: initial;
+  line-height: 1;
+}
+
+.swiper,
+swiper-container {
+  display: flex !important;
+}
+
+.bg-about {
+  display: flex;
+  width: 100%;
+  height: 495px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../assets/aboutbg.png);
+  background-position: top;
+  position: relative;
+}
+
+.elenco {
+  width: 60%;
+  padding-left: 8%;
+  padding-top: 4%;
+  text-shadow: 10px 10px 10px #000000;
+}
+
+.elenco h5 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1.475rem;
+  letter-spacing: 3.6px;
+  color: var(--color-white);
+  text-shadow: 10px 10px 10px #000000;
+}
+
+.elenco span {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 3.895rem;
+  color: var(--color-white);
+}
+
+.elenco span.name {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 3.895rem;
+  margin-left: 8px;
+  color: var(--color-white);
+}
+
+.sinopse {
+  width: 35%;
+  padding-right: 8%;
+  padding-top: 5%;
+}
+
+.sinopse h5 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1.475rem;
+  letter-spacing: 3.6px;
+  color: var(--color-white);
+  text-shadow: 10px 10px 10px #000000;
+}
+
+.sinopse p {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 2rem;
+  color: var(--color-white);
+  padding-top: -0.6rem;
+  line-height: 43px;
+  text-align: justify;
+  text-shadow: 10px 10px 10px #000000;
+  letter-spacing: 0.1px;
+}
+
+.more {
+  width: 100%;
+  backdrop-filter: brightness(0.5);
+  padding: 3rem 8rem;
+  background: transparent;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 16px;
+}
+
+.wrapper-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.icon {
+  width: 100%;
+}
+
+.align-items {
+  display: flex;
+  align-items: center;
+  margin-right: 3.2rem;
+}
+
+.percentage {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: var(--color-white);
+  margin-left: 4px;
+}
+
+.container-main-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container-main-informations {
+  padding-top: 3rem;
+  line-height: 4.4rem;
+}
+
+.p-info {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+  color: var(--color-white);
+}
+
+.p-info-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: var(--color-white);
+}
+
+.title-trailer {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 3.2rem;
+  letter-spacing: 0.1px;
+  color: var(--color-white);
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2.8rem;
+}
+
+.rodape{
+  background-repeat:repeat;
+  background-image: url(../assets/rodape.png);
+  width: 100%;
+  height: 77px;
+  left: 0px;
+  top: 2263px;
+  filter: saturate(0.5);
+}
+.rodape p{
+  text-align: center;
+  padding: 10px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 50px;
+  color: #FFFFFF;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.55);
+}
+.info {
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 1440px) {
+  .title {
+    width: 100%;
+    max-width: 720px;
+    height: 160px;
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 1818px) {
+  .bg-about {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+
+    background-color: var(--color-bg) !important;
+    padding: 18px 14px;
+  }
+
+
+  .elenco {
+    margin-top: 50px;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  .elenco span {
+    font-size: 2rem;
+  }
+
+  .elenco span.name {
+    font-size: 2rem;
+  }
+
+  .elenco h5 {
+    font-size: 2.0rem;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .sinopse {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  .sinopse h5 {
+    font-size: 2.0rem;
+    letter-spacing: 0;
+    padding-bottom: 20px;
+    text-align: center;
+
+  }
+
+  .sinopse p {
+    line-height: 28px;
+    padding: 0;
+  }
+}
+
+@media (max-width:1200px){
+  section .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-main-informations {
+      text-align: center;
+
+  }
+}
+
+@media (max-width:700px){
+  .rodape p{
+    flex-direction: column;
+    font-size: 15px;
+  }
+}
